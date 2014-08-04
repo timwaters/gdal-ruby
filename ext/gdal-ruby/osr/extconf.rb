@@ -1,7 +1,6 @@
 require 'mkmf'
 
 raise 'gdal-config not found.' if `which gdal-config`.empty?
-$CFLAGS << ' -Wno-error=format-security '
 
 dir_config 'gdal',
            `gdal-config --cflags`.split(' ')[0].gsub(/-I/, ''),
@@ -9,10 +8,7 @@ dir_config 'gdal',
 
 have_library 'gdal' or raise 'libgdal not found'
 
-
-
 pkg_config 'gdal'
-
 
 $libs = append_library $libs, 'gdal'
 
