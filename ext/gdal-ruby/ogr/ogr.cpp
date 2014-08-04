@@ -4264,7 +4264,7 @@ _wrap_DataSource_delete_layer(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -4327,7 +4327,7 @@ _wrap_DataSource_sync_to_disk(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -5152,7 +5152,7 @@ _wrap_Layer_set_attribute_filter(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -5601,7 +5601,7 @@ _wrap_Layer_set_next_by_index(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -5677,7 +5677,7 @@ _wrap_Layer_set_feature(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -5753,7 +5753,7 @@ _wrap_Layer_create_feature(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -5824,7 +5824,7 @@ _wrap_Layer_delete_feature(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -5887,7 +5887,7 @@ _wrap_Layer_sync_to_disk(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -6088,7 +6088,7 @@ _wrap_Layer_get_extent(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -6259,7 +6259,7 @@ _wrap_Layer_create_field(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -6330,7 +6330,7 @@ _wrap_Layer_delete_field(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -6409,7 +6409,7 @@ _wrap_Layer_reorder_field(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -6493,7 +6493,7 @@ _wrap_Layer_reorder_fields(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -6597,7 +6597,7 @@ _wrap_Layer_alter_field_defn(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -6660,7 +6660,7 @@ _wrap_Layer_start_transaction(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -6723,7 +6723,7 @@ _wrap_Layer_commit_transaction(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -6786,7 +6786,7 @@ _wrap_Layer_rollback_transaction(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -6969,7 +6969,7 @@ _wrap_Layer_set_ignored_fields(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -7247,7 +7247,7 @@ _wrap_Feature_set_geometry(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -7316,7 +7316,7 @@ _wrap_Feature_set_geometry_directly(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -8928,7 +8928,7 @@ _wrap_Feature_set_fid(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -10334,7 +10334,7 @@ _wrap_Feature_set_from(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -10439,7 +10439,7 @@ _wrap_Feature_set_from_with_map(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -13371,7 +13371,7 @@ _wrap_Geometry_export_to_wkt(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -13477,7 +13477,7 @@ _wrap_Geometry_export_to_wkb(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -13884,7 +13884,7 @@ _wrap_Geometry_add_geometry_directly(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -13960,7 +13960,7 @@ _wrap_Geometry_add_geometry(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -16769,7 +16769,7 @@ _wrap_Geometry_transform_to(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -16845,7 +16845,7 @@ _wrap_Geometry_transform(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -17677,7 +17677,7 @@ _wrap_set_generate_db2_v72_byte_order(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {

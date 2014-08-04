@@ -2587,7 +2587,7 @@ _wrap_get_well_known_geog_csas_wkt(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -2659,7 +2659,7 @@ _wrap_get_user_input_as_wkt(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -3219,7 +3219,7 @@ _wrap_SpatialReference_set_authority(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -3330,7 +3330,7 @@ _wrap_SpatialReference_set_attr_value(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -3390,7 +3390,7 @@ _wrap_SpatialReference_set_angular_units(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -3481,7 +3481,7 @@ _wrap_SpatialReference_set_target_linear_units(int argc, VALUE *argv, VALUE self
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -3541,7 +3541,7 @@ _wrap_SpatialReference_set_linear_units(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -3599,7 +3599,7 @@ _wrap_SpatialReference_set_linear_units_and_update_parameters(int argc, VALUE *a
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -3771,7 +3771,7 @@ _wrap_SpatialReference_set_utm(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -3868,7 +3868,7 @@ _wrap_SpatialReference_set_state_plane(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc4 == SWIG_NEWOBJ) delete[] buf4;
@@ -3904,7 +3904,7 @@ _wrap_SpatialReference_auto_identify_epsg(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -3947,7 +3947,7 @@ _wrap_SpatialReference_set_projection(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -4005,7 +4005,7 @@ _wrap_SpatialReference_set_proj_parm(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -4113,7 +4113,7 @@ _wrap_SpatialReference_set_norm_proj_parm(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -4322,7 +4322,7 @@ _wrap_SpatialReference_set_acea(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -4391,7 +4391,7 @@ _wrap_SpatialReference_set_ae(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -4460,7 +4460,7 @@ _wrap_SpatialReference_set_bonne(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -4529,7 +4529,7 @@ _wrap_SpatialReference_set_cea(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -4598,7 +4598,7 @@ _wrap_SpatialReference_set_cs(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -4683,7 +4683,7 @@ _wrap_SpatialReference_set_ec(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -4744,7 +4744,7 @@ _wrap_SpatialReference_set_eckert_iv(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -4805,7 +4805,7 @@ _wrap_SpatialReference_set_eckert_vi(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -4874,7 +4874,7 @@ _wrap_SpatialReference_set_equirectangular(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -4951,7 +4951,7 @@ _wrap_SpatialReference_set_equirectangular2(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -5028,7 +5028,7 @@ _wrap_SpatialReference_set_gauss_schreiber_tmercator(int argc, VALUE *argv, VALU
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -5089,7 +5089,7 @@ _wrap_SpatialReference_set_gs(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -5150,7 +5150,7 @@ _wrap_SpatialReference_set_gh(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -5184,7 +5184,7 @@ _wrap_SpatialReference_set_igh(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -5253,7 +5253,7 @@ _wrap_SpatialReference_set_geos(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -5322,7 +5322,7 @@ _wrap_SpatialReference_set_gnomonic(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -5415,7 +5415,7 @@ _wrap_SpatialReference_set_hom(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -5516,7 +5516,7 @@ _wrap_SpatialReference_set_hom_2pno(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -5609,7 +5609,7 @@ _wrap_SpatialReference_set_krovak(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -5678,7 +5678,7 @@ _wrap_SpatialReference_set_laea(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -5763,7 +5763,7 @@ _wrap_SpatialReference_set_lcc(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -5840,7 +5840,7 @@ _wrap_SpatialReference_set_lcc_1sp(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -5925,7 +5925,7 @@ _wrap_SpatialReference_set_lccb(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -5994,7 +5994,7 @@ _wrap_SpatialReference_set_mc(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -6071,7 +6071,7 @@ _wrap_SpatialReference_set_mercator(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -6132,7 +6132,7 @@ _wrap_SpatialReference_set_mollweide(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -6201,7 +6201,7 @@ _wrap_SpatialReference_set_nzmg(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -6278,7 +6278,7 @@ _wrap_SpatialReference_set_os(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -6347,7 +6347,7 @@ _wrap_SpatialReference_set_orthographic(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -6416,7 +6416,7 @@ _wrap_SpatialReference_set_polyconic(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -6493,7 +6493,7 @@ _wrap_SpatialReference_set_ps(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -6554,7 +6554,7 @@ _wrap_SpatialReference_set_robinson(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -6615,7 +6615,7 @@ _wrap_SpatialReference_set_sinusoidal(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -6692,7 +6692,7 @@ _wrap_SpatialReference_set_stereographic(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -6761,7 +6761,7 @@ _wrap_SpatialReference_set_soc(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -6838,7 +6838,7 @@ _wrap_SpatialReference_set_tm(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -6924,7 +6924,7 @@ _wrap_SpatialReference_set_tmvariant(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -6995,7 +6995,7 @@ _wrap_SpatialReference_set_tmg(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -7072,7 +7072,7 @@ _wrap_SpatialReference_set_tmso(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -7133,7 +7133,7 @@ _wrap_SpatialReference_set_vdg(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -7181,7 +7181,7 @@ _wrap_SpatialReference_set_well_known_geog_cs(int argc, VALUE *argv, VALUE self)
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -7231,7 +7231,7 @@ _wrap_SpatialReference_set_from_user_input(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -7280,7 +7280,7 @@ _wrap_SpatialReference_copy_geog_csfrom(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -7378,7 +7378,7 @@ _wrap_SpatialReference_set_towgs_84(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -7418,7 +7418,7 @@ _wrap_SpatialReference_get_towgs_84(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -7474,7 +7474,7 @@ _wrap_SpatialReference_set_local_cs(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -7595,7 +7595,7 @@ _wrap_SpatialReference_set_geog_cs(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -7655,7 +7655,7 @@ _wrap_SpatialReference_set_proj_cs(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -7707,7 +7707,7 @@ _wrap_SpatialReference_set_geoc_cs(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -7775,7 +7775,7 @@ _wrap_SpatialReference_set_vert_cs(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -7853,7 +7853,7 @@ _wrap_SpatialReference_set_compound_cs(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -7897,7 +7897,7 @@ _wrap_SpatialReference_import_from_wkt(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -7940,7 +7940,7 @@ _wrap_SpatialReference_import_from_proj4(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -7990,7 +7990,7 @@ _wrap_SpatialReference_import_from_url(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -8040,7 +8040,7 @@ _wrap_SpatialReference_import_from_esri(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -8092,7 +8092,7 @@ _wrap_SpatialReference_import_from_epsg(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -8134,7 +8134,7 @@ _wrap_SpatialReference_import_from_epsga(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -8215,7 +8215,7 @@ _wrap_SpatialReference_import_from_pci(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -8308,7 +8308,7 @@ _wrap_SpatialReference_import_from_usgs(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -8351,7 +8351,7 @@ _wrap_SpatialReference_import_from_xml(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -8424,7 +8424,7 @@ _wrap_SpatialReference_import_from_erm(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -8473,7 +8473,7 @@ _wrap_SpatialReference_import_from_micoord_sys(int argc, VALUE *argv, VALUE self
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (alloc2 == SWIG_NEWOBJ) delete[] buf2;
@@ -8515,7 +8515,7 @@ _wrap_SpatialReference_export_to_wkt(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -8589,7 +8589,7 @@ _wrap_SpatialReference_export_to_pretty_wkt(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -8653,7 +8653,7 @@ _wrap_SpatialReference_export_to_proj4(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -8729,7 +8729,7 @@ _wrap_SpatialReference_export_to_pci(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -8852,7 +8852,7 @@ _wrap_SpatialReference_export_to_usgs(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   if (SWIG_IsTmpObj(res2)) {
@@ -8944,7 +8944,7 @@ _wrap_SpatialReference_export_to_xml(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -9010,7 +9010,7 @@ _wrap_SpatialReference_export_to_micoord_sys(int argc, VALUE *argv, VALUE self) 
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -9116,7 +9116,7 @@ _wrap_SpatialReference_validate(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -9150,7 +9150,7 @@ _wrap_SpatialReference_strip_ctparms(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -9184,7 +9184,7 @@ _wrap_SpatialReference_fixup_ordering(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -9218,7 +9218,7 @@ _wrap_SpatialReference_fixup(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -9252,7 +9252,7 @@ _wrap_SpatialReference_morph_to_esri(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {
@@ -9286,7 +9286,7 @@ _wrap_SpatialReference_morph_from_esri(int argc, VALUE *argv, VALUE self) {
   {
     /* %typemap(out) OGRErr */
     if (result != 0) {
-      rb_raise(rb_eRuntimeError, OGRErrMessages(result));
+      rb_raise(rb_eRuntimeError, "%s", OGRErrMessages(result));
     }
   }
   {

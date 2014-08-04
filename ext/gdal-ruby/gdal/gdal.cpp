@@ -1922,7 +1922,7 @@ static CPLXMLNode *RubyArrayToXMLTree(VALUE rubyArray)
     nChildCount = RARRAY_LEN(rubyArray) - 2;
     if( nChildCount < 0 )
     {
-		 rb_raise(rb_eRuntimeError, "Error in input XMLTree, child count is less than zero.");
+		 rb_raise(rb_eRuntimeError, "%s", "Error in input XMLTree, child count is less than zero.");
     }
 
 	 VALUE item1 = rb_ary_entry(rubyArray, 0);
@@ -8343,7 +8343,7 @@ _wrap_gcps_to_geo_transform(int argc, VALUE *argv, VALUE self) {
       SWIG_ConvertPtr( rubyItem, (void**)&item, SWIGTYPE_p_GDAL_GCP, SWIG_POINTER_EXCEPTION | 0 );
       
       if (!item) {
-        rb_raise(rb_eRuntimeError, "GDAL_GCP item cannot be nil");
+        rb_raise(rb_eRuntimeError, "%s", "GDAL_GCP item cannot be nil");
       }
       
       memcpy( (void*) item, (void*) tmpGCPList1, sizeof( GDAL_GCP ) );
@@ -9432,7 +9432,7 @@ _wrap_Dataset_set_gcps(int argc, VALUE *argv, VALUE self) {
       SWIG_ConvertPtr( rubyItem, (void**)&item, SWIGTYPE_p_GDAL_GCP, SWIG_POINTER_EXCEPTION | 0 );
       
       if (!item) {
-        rb_raise(rb_eRuntimeError, "GDAL_GCP item cannot be nil");
+        rb_raise(rb_eRuntimeError, "%s", "GDAL_GCP item cannot be nil");
       }
       
       memcpy( (void*) item, (void*) tmpGCPList2, sizeof( GDAL_GCP ) );
@@ -17545,7 +17545,7 @@ _wrap_serialize_xml_tree(int argc, VALUE *argv, VALUE self) {
     arg1 = RubyArrayToXMLTree(argv[0]);
     
     if ( !arg1 ) {
-      rb_raise(rb_eRuntimeError, "Could not convert Ruby Array to XML tree.");
+      rb_raise(rb_eRuntimeError, "%s", "Could not convert Ruby Array to XML tree.");
     }
   }
   {
