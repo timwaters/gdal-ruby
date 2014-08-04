@@ -7,7 +7,9 @@ dir_config 'gdal',
            `gdal-config --libs`.split(' ')[0].gsub(/-L/, '')
            
 $CFLAGS << ' -Wno-format-security -Wformat-nonliteral'
-
+print "Current CFLAGS: #{$CFLAGS}\n"
+$CFLAGS.gsub!(/-Werror=format-security/, "-Wno-format-security"
+print "Modified CFLAGS: #{$CFLAGS}\n"
 
 have_library 'gdal' or raise 'libgdal not found'
 
