@@ -8,6 +8,8 @@ dir_config 'gdal',
 
 have_library 'gdal' or raise 'libgdal not found'
 
+$CFLAGS << ' -Wno-error=format-security '
+
 pkg_config 'gdal'
 
 $libs = append_library $libs, 'gdal'
